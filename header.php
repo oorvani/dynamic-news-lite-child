@@ -23,18 +23,11 @@
         <header id="header" class="container clearfix" role="banner">
 
             <div id="logo" class="clearfix">
-            
-                <?php do_action('dynamicnews_site_title'); ?>
-                
-                <?php // Display Tagline on header if activated
-                if ( isset($theme_options['header_tagline']) and $theme_options['header_tagline'] == true ) : ?>            
-                    <h2 class="site-description"><?php echo bloginfo('description'); ?></h2>
-                <?php endif; ?>
-            
+           
             </div>
             
             <div id="header-content" class="clearfix">
-                <?php get_template_part('inc/header-content'); ?>
+
                 <?php // Display Custom Header Image
                 dynamicnews_display_custom_header(); ?>
             </div>
